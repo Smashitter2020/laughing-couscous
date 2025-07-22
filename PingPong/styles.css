@@ -32,3 +32,14 @@ body {
   color: #ccc;
   margin-top: 12px;
 }
+
+.btn {
+  appearance: none;
+  padding-block: 15px;
+  padding-inline: 20px;
+  color: white;
+  background: #0d6efd;
+  cursor: pointer;
+  border: none;
+  font-size: 15px;
+}
