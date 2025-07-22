@@ -1,0 +1,34 @@
+body {
+  background-color: #181818;
+  color: #fff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#game-container {
+  text-align: center;
+}
+
+#pong-canvas {
+  background: #222;
+  display: block;
+  margin: 0 auto;
+  border: 3px solid #444;
+  box-shadow: 0 0 24px #000;
+}
+
+#scoreboard {
+  font-size: 2.2rem;
+  margin: 16px 0;
+  letter-spacing: 6px;
+}
+
+.instructions {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-top: 12px;
+}
