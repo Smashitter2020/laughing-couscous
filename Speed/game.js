@@ -9,6 +9,7 @@ function resetGame() {
   score = 0;
   AIScore = 0;
   timer = 10;
+  document.getElementById("pointsBtn").disabled = false;
 }
 
 function getScore() {
@@ -16,23 +17,13 @@ function getScore() {
   document.getElementById("myScore").textContent = score;
 }
 
-setTimeout(() => {
-  document.getElementById("pointsBtn").disabled = true;
-  if (score = AIScore) {
-    return;
-  }
-  else if(score > AIScore) {
-    scoreLeft++;
-  }
-  else {
-    scoreRight++;
-  }
-}, 10000);
-
 setInterval(() => {
   if (timer >= 1) {
     timer--;
     AIScore += (Math.floor(Math.random() * 1) + 1);
     document.getElementById("AIscore").textContent = AIScore;
+  } else if (timer === 0) {
+    timer--;
+    document.getElementById("pointsBtn").disabled = true;
   }
 }, 1000);
