@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Speed Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="game-container">
+    <div>Your score: <span id="myScore"></span></div>
+    <div>AI score: <span id="AIscore"></span></div>
+    <button class="btn" onclick="getScore()" id="pointsBtn">Click to get points</button>
+    <div id="scoreboard">
+      <span id="score-left">0</span> : <span id="score-right">0</span>
+    </div>
+    <p class="instructions"><strong>Instructions:</strong> The goal is to get the highest score possible in 10 seconds.</p>
+    <button class="btn" onclick="resetGame()">Reset Game</button>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
