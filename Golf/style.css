@@ -1,0 +1,56 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #2a8c4a;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    margin-top: 32px;
+    letter-spacing: 2px;
+}
+
+#game-container {
+    display: inline-block;
+    background: #17532e;
+    padding: 24px 24px 16px 24px;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.3);
+    margin-top: 24px;
+}
+
+#ui {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+#reset-btn {
+    background: #fff;
+    color: #17532e;
+    border: none;
+    padding: 8px 20px;
+    font-size: 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+#reset-btn:hover {
+    background: #e6f7e6;
+}
+
+canvas#golf-canvas {
+    background: #3cb371;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    display: block;
+    margin: auto;
+}
