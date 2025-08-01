@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Speed Clicker Test</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Speed Clicker Test</h1>
+    <div class="stats">
+      <span id="timer">15</span>s left | 
+      Clicks: <span id="clicks">0</span>
+    </div>
+    <button id="clicker-btn" class="main-btn">Click Me!</button>
+  </div>
+
+  <div id="result-dialog" class="modal">
+    <div class="modal-content">
+      <h2>Time's Up!</h2>
+      <p>Total Clicks: <span id="final-clicks"></span></p>
+      <p>Clicks Per Second (CPS): <span id="cps"></span></p>
+      <button id="close-dialog">Close</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
